@@ -54,6 +54,40 @@ Frequency → Number of orders
 
 Monetary → Total spending
 
+SQL (RFM Calculation)
+
+with customer_data as (
+  select 
+    customer_id, 
+    order_date, 
+    order_amount, 
+    max(order_date) over(partition by customer_id) as last_order_date, 
+    count(order_id) over(partition by customer_id) as frequency 
+  from 
+    fact_orders
+) 
+select 
+  customer_id, 
+  frequency, 
+  round(
+    sum(order_amount), 
+    2
+  ) as monetary, 
+  datediff(
+    day, last_order_date, '2025-12-31'
+  ) as recency_days, 
+  case when frequency >= 15 THEN 'Champions' when frequency between 8 
+  AND 14 THEN 'Loyal' when datediff(
+    day, last_order_date, '2025-12-31'
+  ) > 60 THEN 'At Risk' else 'About to Sleep' end as rfm_segment 
+from 
+  Customer_Data 
+group by 
+  customer_id, 
+  last_order_date, 
+  frequency;
+
+
 Segments created:
 
 Champions
