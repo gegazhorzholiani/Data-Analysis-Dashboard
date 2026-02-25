@@ -7,7 +7,7 @@ This project analyzes a global e-commerce dataset to evaluate revenue performanc
 
 The objective was to identify high-value customer segments using RFM analysis and provide actionable business recommendations to improve retention and revenue strategy.
 
-<a href="https://github.com/gegazhorzholiani/Data-Analysis-Dashboard/blob/b1a74e67fdc54c085b30b623e944b64e40f8312d/RFM.PNG>">view dashboard</a>
+-dashboard interaction <a href="https://github.com/gegazhorzholiani/Data-Analysis-Dashboard/blob/b1a74e67fdc54c085b30b623e944b64e40f8312d/RFM.PNG>">view dashboard</a>
 
 📈 Dataset Summary
 
