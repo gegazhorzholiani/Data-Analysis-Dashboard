@@ -7,6 +7,8 @@ This project analyzes a global e-commerce dataset to evaluate revenue performanc
 
 The objective was to identify high-value customer segments using RFM analysis and provide actionable business recommendations to improve retention and revenue strategy.
 
+https://github.com/gegazhorzholiani/Data-Analysis-Dashboard/blob/b1a74e67fdc54c085b30b623e944b64e40f8312d/RFM.PNG
+
 📈 Dataset Summary
 
 Total Revenue: $1.63M
@@ -131,3 +133,4 @@ Increase marketing & inventory before April and August peak months.
 Promote digital payment incentives to reduce manual payment dependency.
 
 Develop loyalty programs for Champions & Loyal Customers to protect core revenue.
+
